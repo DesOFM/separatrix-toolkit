@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.1
+
+- fixed an array-bound mismatch in `separatrix_graph.f90` detected by GitHub Actions;
+- added documentation figures used by the README and validation pages;
+- updated release metadata for the Zenodo/DOI-enabled release.
+
 ## 0.8.0
 
 - selected Apache License 2.0 for the public release;
