@@ -44,7 +44,7 @@ contains
         call graph_components(g,vcomp,ecomp,ncomp)
         allocate(temp(max(1,ncomp)));nnet=0
         do c=1,ncomp
-            has_saddle=any(g%saddle_id>0.and.vcomp==c)
+            has_saddle=any(g%saddle_id(1:g%nv)>0.and.vcomp==c)
             if(.not.has_saddle)cycle
             nnet=nnet+1;temp(nnet)%id=nnet
             call extract_component_branches(g,c,vcomp,ecomp,temp(nnet))
