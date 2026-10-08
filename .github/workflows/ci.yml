@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Fortran Package Manager
+        uses: fortran-lang/setup-fpm@v7
+
+      - name: Build Fortran core
+        run: fpm build
+
+      - name: Run Fortran tests
+        run: fpm test
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python package
+        run: pip install -e .
+
+      - name: Python syntax check
+        run: python -m compileall -q python/separatrix_viz
+
+      - name: Python CLI smoke test
+        run: sepviz --help
+
+      - name: End-to-end example
+        run: |
+          fpm run -- examples/two_saddles.dat
+          sepviz inspect separatrices.dat
+          sepviz plot separatrices.dat --saddles saddles.dat --field examples/two_saddles.dat --output ci_plot.png
+          test -s ci_plot.png

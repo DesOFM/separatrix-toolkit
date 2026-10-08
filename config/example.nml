@@ -1,0 +1,20 @@
+&separatrix
+    input_file = 'examples/two_saddles.dat'
+    layer_id = 1
+
+    ! Negative tolerance = automatic.
+    root_tol = -1.0
+    merge_tol = -1.0
+    level_tol = -1.0
+    connect_tol = -1.0
+
+    radius_factor = 2.0
+    min_cos = 0.90
+
+    saddles_file = 'saddles.dat'
+    separatrices_file = 'separatrices.dat'
+    diagnostics_file = 'diagnostics.txt'
+
+    write_diagnostics = .true.
+    verbose = .true.
+/

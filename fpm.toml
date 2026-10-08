@@ -1,0 +1,14 @@
+name = "separatrix-toolkit"
+version = "0.8.0"
+license = "Apache-2.0"
+author = "Shatokhin Mikhail Victorovich"
+maintainer = "Shatokhin Mikhail Victorovich"
+description = "Detection and reconstruction of separatrix networks in 2-D scalar and Hamiltonian fields"
+keywords = ["fortran", "separatrix", "hamiltonian", "streamfunction", "marching-squares"]
+
+[build]
+auto-executables = true
+auto-tests = true
+
+[library]
+source-dir = "src"

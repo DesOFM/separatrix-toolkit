@@ -1,0 +1,9 @@
+Separatrix Toolkit
+Copyright 2026 Shatokhin Mikhail Victorovich
+
+This product is licensed under the Apache License, Version 2.0.
+
+The numerical separatrix-reconstruction algorithm implemented in this
+repository was developed independently. The hydrodynamic validation model
+is scientifically referenced separately in REFERENCES.bib and
+docs/validation_model.md.

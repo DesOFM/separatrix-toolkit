@@ -1,0 +1,24 @@
+name: Feature request
+description: Suggest a numerical, API, visualization, or documentation improvement
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: What problem or workflow would this feature improve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the desired behavior or API.
+
+  - type: textarea
+    id: numerical
+    attributes:
+      label: Numerical considerations
+      description: If relevant, mention topology, accuracy, convergence, or performance implications.

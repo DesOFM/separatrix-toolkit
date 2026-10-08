@@ -1,0 +1,16 @@
+{
+  "duffing": {
+    "fit_order_saddle": 2.925259942821443,
+    "fit_order_level_rms": 2.0247319391136083,
+    "fit_order_level_max": 1.994574071898272,
+    "fit_order_farfield_hausdorff": 1.99164953369588,
+    "fit_order_farfield_rms": 2.0134915117152965
+  },
+  "heteroclinic": {
+    "fit_order_saddle": 2.0169075983457034,
+    "fit_order_level_rms": 2.008566401500114,
+    "fit_order_level_max": 1.940239028217965,
+    "fit_order_farfield_hausdorff": 2.0080831097034526,
+    "fit_order_farfield_rms": 1.9820277580599563
+  }
+}

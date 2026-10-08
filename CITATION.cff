@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use Separatrix Toolkit in research, please cite this software."
+title: "Separatrix Toolkit"
+type: software
+version: 0.8.0
+date-released: 2026-10-08
+license: Apache-2.0
+authors:
+  - family-names: "Shatokhin"
+    given-names: "Mikhail Victorovich"
+repository-code: "https://github.com/DesOFM/separatrix-toolkit"

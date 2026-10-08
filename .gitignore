@@ -1,0 +1,12 @@
+build/
+*.mod
+*.o
+*.obj
+*.exe
+saddles.dat
+separatrices.dat
+diagnostics.txt
+*.png
+__pycache__/
+.pytest_cache/
+.venv/

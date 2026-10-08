@@ -1,0 +1,45 @@
+name: Bug report
+description: Report a reproducible numerical or software problem
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Provide the input field, command, configuration, or minimal analytic example.
+    validations:
+      required: true
+
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: Paste relevant output from diagnostics.txt and compiler/runtime information.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: v0.8.0 or commit hash
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Area
+      options:
+        - Saddle detection
+        - Contour reconstruction
+        - Graph / topology assembly
+        - File I/O
+        - Python visualization
+        - Build / installation
+        - Documentation
