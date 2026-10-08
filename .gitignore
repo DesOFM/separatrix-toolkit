@@ -7,6 +7,7 @@ saddles.dat
 separatrices.dat
 diagnostics.txt
 *.png
+!docs/images/*.png
 __pycache__/
 .pytest_cache/
 .venv/
