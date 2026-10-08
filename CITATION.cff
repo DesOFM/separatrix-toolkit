@@ -4,6 +4,7 @@ title: "Separatrix Toolkit"
 type: software
 version: 0.8.1
 date-released: 2026-10-08
+doi: 10.5281/zenodo.23247861
 license: Apache-2.0
 authors:
   - family-names: "Shatokhin"
