@@ -1,5 +1,7 @@
 # Separatrix Toolkit
 
+[![DOI](https://zenodo.org/badge/1410742565.svg)](https://doi.org/10.5281/zenodo.23247860)
+
 **A modular Fortran + Python toolkit for detecting saddle points and reconstructing
 homoclinic and heteroclinic separatrix networks in 2-D scalar fields.**
 
